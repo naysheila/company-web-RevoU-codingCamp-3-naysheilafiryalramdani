@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> <!--font sapa--> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet"> <!--font sheila-->
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html"> ⾕ Home</a></li>
+        <li><a href="profile.html"> ☻ Our Profile</a></li>
+        <li><a href="#headquarter">✔ Portfolio</a></li>
+        <li><a href="#message">✆ Message Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 id="greeting">Hi, ! Welcome to our website!</h1>
+      <p>˖᯽ ݁˖ Shei Florals ˖᯽ ݁˖</p>
+    </div>
+    <div class="wave"></div>
+  </section>
+<!-- Feature Cards Section -->
+<section class="features">
+  <div class="feature-card">
+    <h3>❀ Custom Bouquet</h3>
+    <p>Kami merangkai bunga sesuai keinginanmu dengan penuh cinta.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>✦ Fast Delivery</h3>
+    <p>Pengiriman cepat dan aman sampai ke tanganmu.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>♡ Premium Quality</h3>
+    <p>Bunga segar dan berkualitas tinggi, dipilih dengan teliti.</p>
+  </div>
+</section>
+
+<p class="transition-quote">Every bloom finds its place 🌸</p>
+
+
+  <!-- Our Headquarter -->
+  <section id="headquarter" class="headquarter">
+    <h2>Our Creations</h2>
+    <p class="section-quote">“Crafted with care, wrapped with love.”</p>
+    <div class="circle-container">
+      <div class="circle">
+      <img src="image/buket snack.jpg" alt="Buket Snack">
+      <p>Buket Snack</p>
+    </div>
+    <div class="circle">
+      <img src="image/buket bunga.jpg" alt="Buket Bunga">
+      <p>Buket Bunga</p>
+    </div>
+    <div class="circle">
+      <img src="image/buke wisuda.jpg" alt="Buket Wisuda">
+      <p>Buket Wisuda</p>
+    </div>
+    <div class="circle">
+      <img src="image/buket uang.jpg" alt="Buket Custom">
+      <p>Buket Custom</p>
+    </div>
+    <div class="circle">
+      <img src="image/buket diy.jpg" alt="Handmade Bouquet">
+      <p>Handmade bouquet</p>
+    </div>
+      <!--<div class="circle"><img src="https://picsum.photos/120?1" alt="Jakarta"><p>Jakarta</p></div>
+      <div class="circle"><img src="https://picsum.photos/120?2" alt="Bandung"><p>Bandung</p></div>
+      <div class="circle"><img src="https://picsum.photos/120?3" alt="Surabaya"><p>Surabaya</p></div>-->
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message" class="message">
+    <h2>Message Us</h2>
+    <div class="form-wrapper">
+      <form id="messageForm">
+        <label>Nama:</label>
+        <input type="text" id="nama" required>
+        
+        <label>Tanggal Lahir:</label>
+        <input type="date" id="tanggal" required>
+
+        <label>Jenis Kelamin:</label>
+        <select id="kelamin" required>
+
+          <option value="">-- Pilih --</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label>Pesan:</label>
+        <textarea id="pesan" required></textarea>
+
+        <button type="button" id="kirimBtn">Kirim</button>
+      </form>
+
+      <div class="output" id="outputBox">
+        <h3>ur message:</h3>
+        <p id="output"></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="flower flower-top">
+  <svg width="170" height="170" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M120 20C90 40 70 70 50 100C30 130 20 160 40 170C60 180 100 160 130 130C160 100 180 70 170 50C160 30 140 10 120 20Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+<div class="flower flower-bottom">
+  <svg width="170" height="170" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M80 180C110 160 130 130 150 100C170 70 180 40 160 30C140 20 100 40 70 70C40 100 20 130 30 150C40 170 60 190 80 180Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+
+  <footer>
+    <p>. ܁₊ ⊹ . ܁ ⟡ ܁ . ⊹ ₊ ܁. Created by naysheila . ܁₊ ⊹ . ܁ ⟡ ܁ . ⊹ ₊ ܁.</p>
+  </footer>
+  <div class="sparkles"></div>
+</body>
+</html>

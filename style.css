@@ -1,0 +1,475 @@
+/*Font & reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #b7899a, #bd8398, #c08a9d);
+  background-attachment: fixed;
+  color: #0f0f0f;
+  line-height: 1.6;
+  font-family: 'poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: #f8f8f8;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 40px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url('../image/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(108, 32, 32);
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: url('https://svgur.com/i/qt9.svg');
+  background-size: cover;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 30px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: rgba(255, 240, 245, 0.3);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 16px;
+  padding: 25px 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  color: #fff;
+  transition: all .3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+  font-family: "Caveat", cursive;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(180deg, transparent, #b7899a, #b7899b, #b7899c );
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  font-family: 'caveat', cursive;
+  font-style: italic;
+  font-weight: 300;
+
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  background-color: rgba(254, 177, 242, 0.2);
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-text p {
+  font-family: "Caveat", cursive;
+  margin-top: 15px;
+  font-size: 30px;
+  background-color: rgba(249, 167, 219, 0.201);
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: #fffefe;
+}
+
+/* Headquarter Section */
+.headquarter {
+  /*background-color: #b38b9a;*/
+  padding: 80px 20px;
+  text-align: center;
+  background-image: url('../image/floral-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  opacity: 0.95;
+}
+
+.headquarter h2::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: rgba(255,255,255,0.6);
+  margin: 0 auto 15px;
+  border-radius: 2px;
+}
+
+
+.headquarter h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+   font-family: "Caveat", cursive;
+}
+
+.headquarter::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.9),
+    transparent
+  );
+  margin: 0 auto 25px;
+  border-radius: 2px;
+}
+
+.headquarter::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 30px auto 0;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+}
+
+.section-quote {
+  margin-top: -15px;
+  margin-bottom: 40px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+}
+
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.circle {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-style: italic;
+  color: #fff;
+}
+
+.circle img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(250, 250, 250, 0.2);
+}
+
+.circle p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Message Us */
+.message {
+  padding: 80px 20px;
+}
+
+.message h2,
+.message label,
+.message p,
+.message span {
+  color: #131212;
+  font-family: "Caveat", cursive;
+}
+
+
+.output p,
+.output span {
+  color: #333;
+}
+
+
+.message h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.message, form, .output {
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  margin-top: 6px;
+  padding: 8px;
+  border: 1px solid #0f0f0f;
+  border-radius: 6px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #005fcc;
+}
+
+.output {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+footer {
+  text-align: center;
+  font-family: cursive;
+  padding: 25px;
+  background: #c999ab;
+  margin-top: 50px;
+}
+
+.wave {
+  width: 100%;
+  height: 120px;
+  background: url('https://svgur.com/i/qt9.svg');
+  background-size: cover;
+  margin-top: -4px;
+}
+
+.flower img {
+  width: 180px;
+  opacity: 0.55;
+  filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.08));
+}
+
+/* Posisi bunga */
+.flower-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.flower-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.flower img {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0px); }
+}
+
+.sparkles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.4) 1.5px, transparent 1.5px);
+  background-size: 200px 200px;
+  animation: sparkleMove 25s infinite linear;
+  opacity: 0.5;
+  /*filter: blur(0.5px);*/
+}
+
+@keyframes sparkleMove {
+  0% { background-position: 0 0, 0 0, 0 0; }
+  50% { background-position: 80px 120px, -120px 80px, 100px 40px; }
+  100% { background-position: 0 0, 0 0, 0 0; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.feature-card, .circle {
+  animation: fadeUp 1s ease both;
+}
+
+.circle img {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.circle:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  transition: 0.4s ease;
+}
+
+.transition-quote {
+  text-align: center;
+  margin: 60px auto -40px;
+  font-family: 'Caveat', cursive;
+  color: rgba(255,255,255,0.8);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+/* ===== About Section Cards ===== */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /*biar sejajar di sisi kanan */
+  gap: 1.5rem;
+  padding: 4rem 6rem;
+  background: linear-gradient(180deg, #d08fa6, #c07c94);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.about-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 50%; /*Lebar kartu: setengah halaman, bisa ubah sesuai selera */
+  padding: 1.5rem 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-right: 3rem; /*jarak dari sisi kanan */
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.about-card h2 {
+  font-family: "Caveat", cursive;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #fff8f8;
+}
+
+.about-card p,
+.about-card ul {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fffdfd;
+}
+
+.about-card ul {
+  padding-left: 1.2rem;
+}
+
